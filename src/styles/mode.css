@@ -1,0 +1,58 @@
+.modes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding: 1px;
+  width: 243px;
+  height: 38px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.mode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.mode-active {
+  background: #ffffff;
+  border: 1px solid #e2e3e5;
+}
+
+.mode-sym {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #4d5562;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.mode-runtime {
+  width: 108px;
+}
+
+.mode-constructor {
+  width: 133px;
+}
+
+.runtime-img {
+  margin-left: 12px;
+}
+
+.constructor-img {
+  margin-left: 12px;
+}

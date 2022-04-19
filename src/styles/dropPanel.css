@@ -1,0 +1,35 @@
+.drop-panel {
+  display: flex;
+  width: 243px;
+  height: 480px;
+  border: 2px dashed #c4c4c4;
+  border-radius: 6px;
+}
+
+.drop-field {
+  margin: auto;
+  text-align: center;
+}
+
+.drop-field-img {
+  margin-bottom: 12px;
+}
+
+.primary-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5d5fef;
+  margin-bottom: 4px;
+}
+
+.secondary-text {
+  width: 106px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b7280;
+  margin: auto;
+}
