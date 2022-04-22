@@ -1,4 +1,4 @@
-.indicator {
+.display {
   width: 240px;
   height: 60px;
   background: #ffffff;
@@ -7,7 +7,7 @@
   padding: 4px;
 }
 
-.indicator-field {
+.display-field {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -18,7 +18,7 @@
   border-radius: 6px;
 }
 
-.indicator-result {
+.display-result {
   width: 26px;
   height: 44px;
   font-family: "Inter";

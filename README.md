@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+> **Задача**: вам нужно сделать drag-and-drop конструктор, с помощью которого можно собрать калькулятор
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Что нужно сделать?
 
-## Available Scripts
+Нужно написать SPA приложение на React'e и выложить его на github.
 
-In the project directory, you can run:
+# Интерфейс, который должен получиться:
 
-### `npm start`
+[https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpdYzuOkvXY3Q00YRAMsLuz%2FCalculator-Constructor%3Fnode-id%3D1%253A2](https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpdYzuOkvXY3Q00YRAMsLuz%2FCalculator-Constructor%3Fnode-id%3D1%253A2)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[https://www.figma.com/file/pdYzuOkvXY3Q00YRAMsLuz/Calculator-Constructor](https://www.figma.com/file/pdYzuOkvXY3Q00YRAMsLuz/Calculator-Constructor)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Основная часть экрана - холст**
 
-### `npm test`
+На холст можно бросать компоненты из палитры. Все элементы, брошенные на холст, располагаются вертикально.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+При перетаскивании должна подсветиться зона, куда вставится элемент
 
-### `npm run build`
+Элемент удаляется с холста по dblclick
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Сайдбар с набором компонентов**. Их всего 4:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- дисплей (на холсте он может находиться только в самом верху),
+- цифровой блок с кнопками от `0` до `9` и `,` (дробь)
+- кнопки операций: `x`, `/`, `+`, `-`
+- и отдельно кнопка `=`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Все компоненты одинаковой ширины.
 
-### `npm run eject`
+Каждый элемент можно бросить на холст только один раз, Затем они становятся неактивными (визуально - opacity 50%).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **Переключатель** между режимом конструктора и runtime
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Это может быть обычный свитчер в углу экрана.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- в режиме конструктора можно собирать интерфейс, но при нажатии на кнопки, они ничего не делают.
+- в режиме runtime перетаскивать ничего нельзя (можно полностью скрывать сайдбар), но работает калькулятор (или то что собрали).Нажимаем на кнопки и видим результат на дисплее.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Стэк:
 
-## Learn More
+- TypeScript, React
+- redux / redux-thunk / redux toolkit / redux-saga - на ваше усмотрение
+- css framework - на ваше усмотрение
+- eslint
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## На что мы будем обращать внимание:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- результат соответствует ТЗ
+- архитектура проекта: как вы работаете с данными, какие у вас будут уровни абстракций, как вы отделите бизнес логику от UI и данных
+- качество кода: читаемость, лаконичность, единообразие
+- пакеты и библиотеки, которые вы используете и как вы их используете
 
-### Code Splitting
+## **Когда всё готово**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Работающее задание выложите на GitHub Pages, Heroku или др.
+2. Укажите в описании проекта ссылку на задеплоенную версию.
+3. Пригласите нас в свой репозиторий: `nipanasovich`, `aleksnick`, `trikashny`, `teralion`
+4. Отправьте ссылку на репозиторий как отклик на вакансию.

@@ -2,7 +2,7 @@ import "../styles/operators.css";
 
 function Operators() {
   return (
-    <div className="operators">
+    <div id="operators" className="operators">
       <button className="operator-field">
         <div className="operator-sym">/</div>
       </button>

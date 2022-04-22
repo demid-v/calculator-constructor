@@ -1,4 +1,4 @@
-import "../styles/mode.css";
+import "../styles/modes.css";
 
 import runtimeImg from "../assets/runtime.svg";
 import constructorImg from "../assets/constructor.svg";

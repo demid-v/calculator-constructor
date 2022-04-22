@@ -2,7 +2,7 @@ import "../styles/symbols.css";
 
 function Symbols() {
   return (
-    <div className="symbols">
+    <div id="symbols" className="symbols">
       <button className="symbols-field">
         <div className="symbol-sym">7</div>
       </button>
